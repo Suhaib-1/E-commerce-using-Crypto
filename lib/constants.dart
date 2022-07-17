@@ -1,0 +1,56 @@
+
+const productsData = [
+  {
+    "name":"T-Shirts",
+    "brand":"LULULEMON",
+    "price":12.99,
+    "image":"T-Shirts.png"
+  },{
+    "name":"jackets",
+    "brand":"Celio",
+    "price":24.99,
+    "image":"jackets.png"
+  },
+  {
+    "name":"Women-Jeans",
+    "brand":"DIOR",
+    "price":11.49,
+    "image":"Women-Jeans.png"
+  },
+  {
+    "name":"Sweater",
+    "brand":"FENDI",
+    "price":32.99,
+    "image":"Sweater.png"
+  },
+  {
+    "name":"Dresses",
+    "brand":"Calvin Klein",
+    "price":49.49,
+    "image":"Dresses.png"
+  },
+  {
+    "name":"Coats",
+    "brand":"FENDI",
+    "price":34.49,
+    "image":"Coats.png"
+  },
+  {
+    "name":"Shoes",
+    "brand":"ADIDAS",
+    "price":27.99,
+    "image":"Shoes.png"
+  },
+  {
+    "name":"Cap",
+    "brand":"UNIQLO",
+    "price":22.99,
+    "image":"Cap.png"
+  },
+  {
+    "name":"Women-Shorts",
+    "brand":"BURBERRY",
+    "price":16.99,
+    "image":"Women-Shorts.png"
+  }
+];
