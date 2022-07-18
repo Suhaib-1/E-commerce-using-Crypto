@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:test_6_6_2020/login.dart';
+import 'package:test_6_6_2020/privacy_and_security.dart';
+import 'package:test_6_6_2020/terms_of_us.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key key}) : super(key: key);
@@ -59,11 +61,54 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(
               height: 10,
             ),
-            buildAccountOptionRow(context, "Change password",),
+            buildAccountOptionRow(
+              context,
+              "Change password",
+            ),
             buildAccountOptionRow(context, "Content settings"),
-            buildAccountOptionRow(context, "Social"),
-            buildAccountOptionRow(context, "Language"),
-            buildAccountOptionRow(context, "Privacy and security"),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8.0),
+              child: InkWell(
+                  onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => const PrivacyAndSecurity()));},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Privacy and security",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey[600],
+                        ),
+                      ),
+                      const Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.grey,
+                      ),
+                    ],
+                  )),
+            ), Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8.0),
+              child: InkWell(
+                  onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Terms()));},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Terms of us",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey[600],
+                        ),
+                      ),
+                      const Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.grey,
+                      ),
+                    ],
+                  )),
+            ),
             const SizedBox(
               height: 40,
             ),
@@ -116,29 +161,31 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
-  Row buildNotificationOptionRow(String title, bool isActive) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          title,
-          style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w500,
-              color: Colors.grey[600]),
-        ),
-        Transform.scale(
-          scale: 0.7,
-          child: CupertinoSwitch(
-            value: isActive,
-            onChanged: (bool value) {},
-          ),
-        )
-      ],
-    );
+  InkWell buildNotificationOptionRow(String title, bool isActive) {
+    return InkWell(
+        onTap: () {},
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              title,
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey[600]),
+            ),
+            Transform.scale(
+              scale: 0.7,
+              child: CupertinoSwitch(
+                value: isActive,
+                onChanged: (bool value) {},
+              ),
+            )
+          ],
+        ));
   }
 
-  GestureDetector buildAccountOptionRow(BuildContext context, String title ) {
+  GestureDetector buildAccountOptionRow(BuildContext context, String title) {
     return GestureDetector(
       onTap: () {
         showDialog(
@@ -149,9 +196,8 @@ class _SettingsPageState extends State<SettingsPage> {
                 content: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
-                    Text("Option 1"),
-                    Text("Option 2"),
-                    Text("Option 3"),
+                    Text(
+                        "You have to contact with the support service to make the change "),
                   ],
                 ),
                 actions: [
