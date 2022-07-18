@@ -38,7 +38,7 @@ class Terms extends StatelessWidget {
               Row(
                 children: const [
                   Text(
-                      '1. Licence. We grant you a limited licence to use this website.',
+                      '1. Licence. We grant you a limited licence to use this app.',
                       style: TextStyle(
                         fontSize: 14,
                       )),
@@ -64,7 +64,7 @@ class Terms extends StatelessWidget {
                 children: const [
                   Expanded(
                     child: Text(
-                      '3. Framing. You may not frame this website.',
+                      '3. Framing. You may not frame this app.',
                       style: TextStyle(fontSize: 13),
                     ),
                   ),
@@ -77,7 +77,7 @@ class Terms extends StatelessWidget {
                 children: const [
                   Expanded(
                     child: Text(
-                      '4. Capacity You agree to these terms on the basis that you have the capacity to visit this website.',
+                      '4. Capacity You agree to these terms on the basis that you have the capacity to visit this app.',
                       style: TextStyle(fontSize: 13),
                     ),
                   ),
@@ -90,7 +90,7 @@ class Terms extends StatelessWidget {
                 children: const [
                   Expanded(
                     child: Text(
-                      '5. Accurate information. You promise that you will give this website only accurate information.',
+                      '5. Accurate information. You promise that you will give this app only accurate information.',
                       style: TextStyle(fontSize: 13),
                     ),
                   ),
@@ -103,7 +103,7 @@ class Terms extends StatelessWidget {
                 children: const [
                   Expanded(
                     child: Text(
-                      '6. Ownership. We or our third party licensors own all rights in this website.',
+                      '6. Ownership. We or our third party licensor own all rights in this app.',
                       style: TextStyle(fontSize: 13),
                     ),
                   ),
@@ -130,7 +130,7 @@ class Terms extends StatelessWidget {
                 children: const [
                   Expanded(
                     child: Text(
-                      '8. Restrictions. You may not change, hire out, reverse engineer, or copy this website without our permission',
+                      '8. Restrictions. You may not recharge, reworded, or receive income without our permission',
                       style: TextStyle(fontSize: 13),
                     ),
                   ),
@@ -143,7 +143,7 @@ class Terms extends StatelessWidget {
                 children: const [
                   Expanded(
                     child: Text(
-                      '9. Own risk. You use this website at your own risk and we make no warranties about it.',
+                      '9. Own risk. You use this app at your own risk and we make no warranties about it.',
                       style: TextStyle(fontSize: 13),
                     ),
                   ),
@@ -156,7 +156,7 @@ class Terms extends StatelessWidget {
                 children: const [
                   Expanded(
                     child: Text(
-                      '10. indemnity. You indemnify us against any liability related to your use of this website.',
+                      '10. indemnity. You indemnify us against any liability related to your use of this app.',
                       style: TextStyle(fontSize: 13),
                     ),
                   ),
