@@ -103,7 +103,7 @@ class Wallet extends StatelessWidget {
                   children: const <Widget>[
                     BottomNavigationItem(
                       type: BottomNav.home,
-                      isActive: false,
+                      isActive: true,
                     ),
                     BottomNavigationItem(
                       type: BottomNav.profile,

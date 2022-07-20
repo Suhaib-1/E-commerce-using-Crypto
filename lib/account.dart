@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:test_6_6_2020/login.dart';
 import 'package:test_6_6_2020/privacy_and_security.dart';
 import 'package:test_6_6_2020/terms_of_us.dart';
+import 'package:test_6_6_2020/withdraw.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key key}) : super(key: key);
@@ -29,15 +30,64 @@ class _SettingsPageState extends State<SettingsPage> {
         ),
       ),
       body: Container(
-        padding: const EdgeInsets.only(left: 16, top: 25, right: 16),
+        padding: EdgeInsets.only(left: 16, top: 25, right: 16),
         child: ListView(
           children: [
+            Row(
+              children: const [
+                Icon(
+                  Icons.send,
+                  color: Colors.green,
+                ),
+                SizedBox(
+                  width: 8,
+                ),
+                Text(
+                  "Income Rewards",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),   SizedBox(
+              height: 15,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8.0),
+              child: InkWell(
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => const Withdraw()));
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Withdraw",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey[600],
+                        ),
+                      ),
+                      const Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.grey,
+                      ),
+                    ],
+                  )),
+            ),
+            const Divider(
+              height: 15,
+              thickness: 2,
+            ),
+            SizedBox(
+              height: 18,
+            ),
             const Text(
               "Settings",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
             ),
             const SizedBox(
-              height: 40,
+              height: 20,
             ),
             Row(
               children: const [
@@ -61,15 +111,15 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(
               height: 10,
             ),
-            buildAccountOptionRow(
-              context,
-              "Change password",
-            ),
+            buildAccountOptionRow(context, "Change password"),
             buildAccountOptionRow(context, "Content settings"),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: InkWell(
-                  onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => const PrivacyAndSecurity()));},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const PrivacyAndSecurity()));
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -87,10 +137,14 @@ class _SettingsPageState extends State<SettingsPage> {
                       ),
                     ],
                   )),
-            ), Padding(
+            ),
+            Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: InkWell(
-                  onTap: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Terms()));},
+                  onTap: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => const Terms()));
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -110,7 +164,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   )),
             ),
             const SizedBox(
-              height: 40,
+              height: 20,
             ),
             Row(
               children: const [
@@ -138,7 +192,7 @@ class _SettingsPageState extends State<SettingsPage> {
             buildNotificationOptionRow("Account activity", true),
             buildNotificationOptionRow("Opportunity", true),
             const SizedBox(
-              height: 50,
+              height: 20,
             ),
             Center(
               // ignore: deprecated_member_use

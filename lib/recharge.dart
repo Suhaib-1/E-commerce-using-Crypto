@@ -32,11 +32,15 @@ class Recharge extends StatelessWidget {
                   child: Column(children: [
                 const Padding(
                     padding: EdgeInsets.only(
-                        top: 150, bottom: 50, left: 350, right: 150)),
+                  top: 150,
+                  bottom: 50,
+                )),
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.9,
+                  // width: MediaQuery.of(context).size.width * 0.9,
                   height: MediaQuery.of(context).size.height / 1.4,
-                  padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
+                  padding: const EdgeInsets.only(
+                    top: 20,
+                  ),
                   decoration: BoxDecoration(
                       border: Border.all(
                           style: BorderStyle.solid,
@@ -67,7 +71,10 @@ class Recharge extends StatelessWidget {
                       ),
                       const Text(
                         'Tron (TRC20)',
-                        style:  TextStyle(fontWeight: FontWeight.bold,color: Colors.green,fontSize: 18),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green,
+                            fontSize: 18),
                       ),
                       SizedBox(
                         height: MediaQuery.of(context).size.height * 0.02,
@@ -81,8 +88,9 @@ class Recharge extends StatelessWidget {
                             enabled: true,
                             suffixIcon: Icon(Icons.copy),
                             isDense: true,
-                            hintText: 'TAH9DCpHacRiwvo2HdHePhHmjMTbq3XpBp' ),
-                        readOnly: true,
+                            hintText: 'TAH9DCpHacRiwvo2HdHePhHmjMTbq3XpBp'),
+                        style: TextStyle(fontSize: 15),
+                        readOnly: false,
                       )),
                       const Padding(
                         padding: EdgeInsets.only(top: 10, bottom: 10),
@@ -98,8 +106,8 @@ class Recharge extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height * 0.02,
                       ),
-                      const Text('Sent only USDT to this deposit address. '
-                          'Sending coin or token other that USDT to this address may result in the loss of your deposit'),
+                      const Text('Send only USDT to this deposit address.'
+                          'Sending coin or token other than USDT to this address may result in the loss of your deposit.'),
                       SizedBox(
                         height: MediaQuery.of(context).size.height * 0.02,
                       ),

@@ -8,7 +8,7 @@ class PrivacyAndSecurity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor:Color(0xffAB50A8),
         title: Text('Privacy and security'),
         centerTitle: true,
         leading: IconButton(

@@ -163,7 +163,7 @@ class _LoginState extends State<Login> {
                                                 builder: (context) => const SignUp()));
                                       },
                                       child: const Text(
-                                        'Dont Have An Account',
+                                        'Don\'t Have An Account',
                                         style: TextStyle(color: Colors.black54),
                                       )))
                             ])))
