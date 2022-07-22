@@ -1,6 +1,6 @@
 import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/wallet.dart';
+import 'package:test_6_6_2020/wallet_screen.dart';
 
 class Withdraw extends StatefulWidget {
   const Withdraw({Key key}) : super(key: key);
@@ -146,7 +146,7 @@ class _WithdrawState extends State<Withdraw> {
                         // ignore: missing_return
                         validator: (value) {
                           if (value.isEmpty || value == null) {
-                            return 'Please Enter The Right Amount';
+                            return 'Please Enter The Correct Amount';
                           }
                         },
                         textAlign: TextAlign.center,
@@ -178,7 +178,7 @@ class _WithdrawState extends State<Withdraw> {
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                          primary: const Color(0xff6BB49F),
+                          primary: Color(0xffAB50A8),
                           side: const BorderSide(style: BorderStyle.solid),
                           shape: const RoundedRectangleBorder(
                               borderRadius:

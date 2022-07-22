@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/login.dart';
+import 'package:test_6_6_2020/login_screen.dart';
 import 'package:test_6_6_2020/privacy_and_security.dart';
 import 'package:test_6_6_2020/terms_of_us.dart';
 import 'package:test_6_6_2020/withdraw.dart';
@@ -30,7 +30,7 @@ class _SettingsPageState extends State<SettingsPage> {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.only(left: 16, top: 25, right: 16),
+        padding: const EdgeInsets.only(left: 16, top: 25, right: 16),
         child: ListView(
           children: [
             Row(
@@ -47,7 +47,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
               ],
-            ),   SizedBox(
+            ),   const SizedBox(
               height: 15,
             ),
             Padding(
@@ -79,7 +79,7 @@ class _SettingsPageState extends State<SettingsPage> {
               height: 15,
               thickness: 2,
             ),
-            SizedBox(
+            const SizedBox(
               height: 18,
             ),
             const Text(

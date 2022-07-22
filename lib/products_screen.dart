@@ -110,7 +110,7 @@ class _ProductsState extends State<Products> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
                   Text(
-                    "Menu",
+                    "Top Sales",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,

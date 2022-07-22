@@ -8,20 +8,20 @@ class PrivacyAndSecurity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor:Color(0xffAB50A8),
-        title: Text('Privacy and security'),
+        backgroundColor:const Color(0xffAB50A8),
+        title: const Text('Privacy and security'),
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
         ),
       ),
       body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.only(top: 15, left: 10),
+          padding: const EdgeInsets.only(top: 15, left: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,7 +32,7 @@ class PrivacyAndSecurity extends StatelessWidget {
               ),
               const Divider(),
               buildNotificationOptionRow("Enable security and malware protection", true),
-              buildNotificationOptionRow("Use a prediction server to help you complete orders", true),
+              buildNotificationOptionRow("Prediction server to help you complete orders", true),
               buildNotificationOptionRow("Prefetch resources to load pages more quickly", true),
               buildNotificationOptionRow("Automatically send usage statistics and rewords", true),
               buildNotificationOptionRow("2-Step Verification", true),

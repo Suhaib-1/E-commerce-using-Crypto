@@ -107,7 +107,7 @@ class _CustomersState extends State<Customers> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
                   Text(
-                    "Best week customers",
+                    "Top week customers",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -168,19 +168,19 @@ const customersData = [
   {
     "name":"Fedir Bohdan",
     "brand":"Income",
-    "price":3821.42,
+    "price":4821.42,
     "image":"Men.png"
   },
   {
     "name":"Theodore Elijah",
     "brand":"Income",
-    "price":3272.12,
+    "price":3772.12,
     "image":"Men.png"
   },
   {
     "name":"Liam Decste",
     "brand":"Income",
-    "price":2819.00,
+    "price":3419.00,
     "image":"Men.png"
   },
   {
@@ -204,7 +204,30 @@ const customersData = [
   {
     "name":"Alina Andriy",
     "brand":"Income",
-    "price":1116.00,
+    "price":1716.00,
     "image":"Women.png"
-  }
+  },
+  {
+    "name":"Jack Hufe",
+    "brand":"Income",
+    "price":1700.21,
+    "image":"Men.png"
+  },
+{
+"name":"lee Banto",
+"brand":"Income",
+"price":1653.02,
+"image":"Men.png"
+},
+{
+"name":"Foden Lastore",
+"brand":"Income",
+"price":1603.63,
+"image":"Men.png"
+},{
+    "name":"Rose Rose",
+    "brand":"Income",
+    "price":1572.28,
+    "image":"Women.png"
+  },
 ];

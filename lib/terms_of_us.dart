@@ -7,7 +7,7 @@ class Terms extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Color(0xffAB50A8),
+          backgroundColor: const Color(0xffAB50A8),
           title: const Text('Terms of Us'),
           centerTitle: true,
           leading: IconButton(

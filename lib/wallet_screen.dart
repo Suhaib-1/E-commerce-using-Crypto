@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/account.dart';
-import 'package:test_6_6_2020/customers.dart';
-import 'package:test_6_6_2020/products.dart';
-import 'package:test_6_6_2020/recharge.dart';
+import 'package:test_6_6_2020/account_screen.dart';
+import 'package:test_6_6_2020/customers_screen.dart';
+import 'package:test_6_6_2020/order_screen.dart';
+import 'package:test_6_6_2020/products_screen.dart';
+import 'package:test_6_6_2020/recharge_screen.dart';
+import 'package:test_6_6_2020/packages_screeen.dart';
 
 enum SpecialContainerType { customers, products, recharge, order }
 enum BottomNav { home, profile }
@@ -38,7 +40,7 @@ class Wallet extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const <Widget>[
                       Text(
-                        "Hello",
+                        "JACK",
                         style: TextStyle(color: Colors.white, fontSize: 25),
                       ),
                       CircleAvatar(
@@ -48,11 +50,16 @@ class Wallet extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 15),
+                  Text(
+                    'ID: 10510782',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  const SizedBox(height: 25),
                   const Text(
-                    "Today Sales",
+                    "Total amount",
                     style: TextStyle(fontSize: 15.0, color: Colors.white),
                   ),
+                  const SizedBox(height: 5),
                   RichText(
                     text: const TextSpan(
                       children: [
@@ -70,7 +77,6 @@ class Wallet extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 35),
                 ],
               ),
             ),
@@ -262,7 +268,7 @@ class SpecialContainer extends StatelessWidget {
               ]),
           onPressed: () {
             Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => const Products()));
+                MaterialPageRoute(builder: (context) => const Packages()));
           },
         );
         break;
@@ -311,7 +317,10 @@ class SpecialContainer extends StatelessWidget {
               children: <Widget>[
                 Text(
                   containerText,
-                  style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 15),
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15),
                 ),
                 SizedBox(
                     width: MediaQuery.of(context).size.width * 0.15,
