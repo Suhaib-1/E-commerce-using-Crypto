@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:wealth_earn/account_screen.dart';
 import 'package:wealth_earn/order_screen.dart';
 import 'package:wealth_earn/wallet_screen.dart';
+
 enum BottomNav { home, profile }
 
 class Packages extends StatefulWidget {
@@ -19,14 +20,23 @@ class _PackagesState extends State<Packages> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff1a1830),
+      appBar: AppBar(
+        title: Text(
+          'Membership Packages',
+          textAlign: TextAlign.center,
+          style: GoogleFonts.poppins(
+              fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+        elevation: 0,
+        backgroundColor: const Color(0xff1a1830),
+        // ignore: prefer_const_constructors
+        leading: IconButton( onPressed:(){Navigator.pop(context);},
+            icon:const Icon(Icons.arrow_back,
+                color: Colors.white)
+        ),
+      ),
       body: Container(
         height: MediaQuery.of(context).size.height,
-        // decoration: const BoxDecoration(
-        //   image: DecorationImage(
-        //     image: AssetImage("assets/images/Cap.png"),
-        //     fit: BoxFit.fill,
-        //   ),
-        // ),
         width: double.infinity,
         child: SafeArea(
           child: SingleChildScrollView(
@@ -37,24 +47,18 @@ class _PackagesState extends State<Packages> {
                 const SizedBox(
                   height: 20,
                 ),
-                Text(
-                  'Membership Packages',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.poppins(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,color: Colors.white
-                  ),
-                ),
                 Padding(
                   padding: const EdgeInsets.only(top: 10, bottom: 5),
                   child: Text(
                     'Choose a membership plan to unlock the features',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
-                      // textStyle: const TextStyle(color: Colors.white,),
-                      fontSize: 14,color: Colors.white
-                    ),
-                  ),
+                        // textStyle: const TextStyle(color: Colors.white,),
+                        fontSize: 15,
+                        color: Colors.white),
+                  ),),
+                const SizedBox(
+                  height: 10,
                 ),
                 Padding(
                     padding: const EdgeInsets.only(top: 0, bottom: 10),
@@ -67,17 +71,18 @@ class _PackagesState extends State<Packages> {
                               'VIP 1 ',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                // textStyle: const TextStyle(color: Colors.white,),
-                                fontSize: 14,color: const Color(0xffE5C150),fontWeight: FontWeight.bold
-                              ),
+                                  // textStyle: const TextStyle(color: Colors.white,),
+                                  fontSize: 14,
+                                  color: const Color(0xffE5C150),
+                                  fontWeight: FontWeight.bold),
                             ),
                             Text(
                               'Commission %5',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                // textStyle: const TextStyle(color: Colors.white,),
-                                fontSize: 14,color: Colors.white
-                              ),
+                                  // textStyle: const TextStyle(color: Colors.white,),
+                                  fontSize: 14,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -87,17 +92,18 @@ class _PackagesState extends State<Packages> {
                               'VIP 2 ',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                // textStyle: const TextStyle(color: Colors.white,),
-                                fontSize: 14,color: const Color(0xffE5C150),fontWeight: FontWeight.bold
-                              ),
+                                  // textStyle: const TextStyle(color: Colors.white,),
+                                  fontSize: 14,
+                                  color: const Color(0xffE5C150),
+                                  fontWeight: FontWeight.bold),
                             ),
                             Text(
                               'Commission %7',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                // textStyle: const TextStyle(color: Colors.white,),
-                                fontSize: 14,color: Colors.white
-                              ),
+                                  // textStyle: const TextStyle(color: Colors.white,),
+                                  fontSize: 14,
+                                  color: Colors.white),
                             )
                           ],
                         ),
@@ -107,17 +113,15 @@ class _PackagesState extends State<Packages> {
                               'VIP 3 ',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                // textStyle: const TextStyle(color: Colors.white,),
-                                fontSize: 14,color: const Color(0xffE5C150),fontWeight: FontWeight.bold
-                              ),
+                                  fontSize: 14,
+                                  color: const Color(0xffE5C150),
+                                  fontWeight: FontWeight.bold),
                             ),
                             Text(
                               'Commission %12',
                               textAlign: TextAlign.center,
                               style: GoogleFonts.poppins(
-                                // textStyle: const TextStyle(color: Colors.white,),
-                                fontSize: 14,color: Colors.white
-                              ),
+                                  fontSize: 14, color: Colors.white),
                             )
                           ],
                         ),
@@ -194,12 +198,11 @@ class _PackagesState extends State<Packages> {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Order()
-                          ),
+                              builder: (context) => const Order()),
                         );
                       },
                       child: Padding(
-                        padding:  const EdgeInsets.symmetric(horizontal: 12.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 12.0),
                         child: SizedBox(
                           height: 147,
                           width: MediaQuery.of(context).size.width,
@@ -214,9 +217,8 @@ class _PackagesState extends State<Packages> {
                                 child: Container(
                                     decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
-                                  image:  const DecorationImage(
-                                    image:  AssetImage('assets/vip2.jpg'),
-
+                                  image: const DecorationImage(
+                                    image: AssetImage('assets/vip2.jpg'),
                                     fit: BoxFit.fill,
                                   ),
                                 )),
@@ -316,34 +318,35 @@ class _PackagesState extends State<Packages> {
             ),
           ),
         ),
-      ),bottomNavigationBar: Padding(
-      padding:
-      const EdgeInsets.symmetric(horizontal: 15.0, vertical: 2),
-      child: Container(
-        padding:
-        const EdgeInsets.symmetric(horizontal: 15.0, vertical: 2),
-        decoration: BoxDecoration(
-          color: Colors.white10,
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: const <Widget>[
-            BottomNavigationItem(
-              type: BottomNav.home,
-              isActive: true,
-            ),
-            BottomNavigationItem(
-              type: BottomNav.profile,
-              isActive: true,
-            ),
-          ],
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 2),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 2),
+          decoration: BoxDecoration(
+            color: Colors.white10,
+            borderRadius: BorderRadius.circular(15),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: const <Widget>[
+              BottomNavigationItem(
+                type: BottomNav.home,
+                isActive: true,
+              ),
+              BottomNavigationItem(
+                type: BottomNav.profile,
+                isActive: true,
+              ),
+            ],
+          ),
         ),
       ),
-    ) ,
     );
   }
-}class BottomNavigationItem extends StatelessWidget {
+}
+
+class BottomNavigationItem extends StatelessWidget {
   // ignore: prefer_typing_uninitialized_variables
   final type;
   final bool isActive;
@@ -387,14 +390,13 @@ class _PackagesState extends State<Packages> {
           borderRadius: BorderRadius.circular(23),
           gradient: isActive
               ? const LinearGradient(
-            colors: [
-              Color(0xffb43af7),
-              Color(0xff6d2af7),
-            ],
-          )
+                  colors: [
+                    Color(0xffb43af7),
+                    Color(0xff6d2af7),
+                  ],
+                )
               : null,
         ),
         child: icon);
   }
 }
-

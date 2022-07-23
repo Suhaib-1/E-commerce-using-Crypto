@@ -49,16 +49,18 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     var pageDecoration = const PageDecoration(
-      titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700),
-      bodyTextStyle: TextStyle(fontSize: 19.0),
+      titleTextStyle: TextStyle(fontSize: 28.0, fontWeight: FontWeight.w700,color: Colors.white),
+      bodyTextStyle: TextStyle(fontSize: 19.0,color: Colors.white),
       descriptionPadding: EdgeInsets.all(16),
-      pageColor: Colors.amber,
+      // pageColor: Colors.amber,
+      pageColor: Color(0xff1a1830),
       imagePadding: EdgeInsets.zero,
     );
 
     return firstOpen
         ? IntroductionScreen(
-            globalBackgroundColor: Colors.amber,
+            // globalBackgroundColor: Colors.amber,
+      globalBackgroundColor: Color(0xff1a1830),
             globalHeader: Align(
               alignment: Alignment.topRight,
               child: SafeArea(
@@ -78,6 +80,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     'released in May 2021 by the Board of Governors of the Federal Reserve System.',
                     style: TextStyle(
                       fontSize: 16,
+                        color: Colors.white
                     ),
                   ),
                   image: _buildImage('img1.png'),
@@ -89,6 +92,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   'buy/sell you\'r orders and make your own profits.',
                   style: TextStyle(
                     fontSize: 17.5,
+                      color: Colors.white
                   ),
                 ),
                 image: _buildImage('img2.png'),
@@ -143,32 +147,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               body: SizedBox(
                 height: size.height,
                 width: double.infinity,
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 0,
-                      left: 0,
-                      child: Image.asset(
-                        'assets/welcome_screen/img1.png',
-                        width: size.width * 0.3,
-                      ),
-                    ),
-                    Positioned(
-                      bottom: 0,
-                      left: 0,
-                      child: Image.asset(
-                        'assets/welcome_screen/img1.png',
-                        width: size.width * 0.2,
-                      ),
-                    ),
-                    Center(
-                      child: Image.asset(
-                        'assets/welcome_screen/img1.png',
-                        width: size.width * 0.4,
-                      ),
-                    ),
-                  ],
-                ),
               ),
             ),
           );
