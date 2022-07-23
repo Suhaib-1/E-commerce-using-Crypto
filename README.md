@@ -1,4 +1,4 @@
-# test_6_6_2020
+# wealth_earn
 
 A new Flutter application.
 

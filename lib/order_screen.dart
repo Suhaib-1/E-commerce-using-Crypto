@@ -1,5 +1,7 @@
+// ignore_for_file: text_direction_code_point_in_literal
+
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/wallet_screen.dart';
+import 'package:wealth_earn/wallet_screen.dart';
 
 class Order extends StatelessWidget {
   const Order({Key key}) : super(key: key);
@@ -11,7 +13,8 @@ class Order extends StatelessWidget {
         title: const Text('Make Your Order'),
         leading: ElevatedButton(
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => const Wallet()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const Wallet()));
           },
           child: const Icon(Icons.arrow_back_ios),
         ),
@@ -31,7 +34,8 @@ class Order extends StatelessWidget {
                 ),
                 const SizedBox(
                   width: 50,
-                ),const Divider(thickness: 2,color: Colors.black ),
+                ),
+                const Divider(thickness: 2, color: Colors.black),
                 Column(
                   children: const [
                     Text(
@@ -41,12 +45,20 @@ class Order extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(' \$ 114.95‬',style: TextStyle(fontWeight: FontWeight.bold),),
+                    Text(
+                      ' \$ 114.95‬',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
                     Text(' X5')
                   ],
                 ),
               ],
-            ),const Divider(thickness: 2,color: Colors.black,),          Row(
+            ),
+            const Divider(
+              thickness: 2,
+              color: Colors.black,
+            ),
+            Row(
               children: [
                 SizedBox(
                   width: 60,
@@ -54,22 +66,31 @@ class Order extends StatelessWidget {
                 ),
                 const SizedBox(
                   width: 50,
-                ),const Divider(thickness: 2,color: Colors.black ),
+                ),
+                const Divider(thickness: 2, color: Colors.black),
                 Column(
                   children: const [
                     Text(
-                      'Cap',
+                      'Gaming Chair',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(' \$ 114.95‬',style: TextStyle(fontWeight: FontWeight.bold),),
-                    Text(' X5')
+                    Text(
+                      ' \$ 215.95‬',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(' X2')
                   ],
                 ),
               ],
-            ),const Divider(thickness: 2,color: Colors.black,),     Row(
+            ),
+            const Divider(
+              thickness: 2,
+              color: Colors.black,
+            ),
+            Row(
               children: [
                 SizedBox(
                   width: 60,
@@ -77,22 +98,31 @@ class Order extends StatelessWidget {
                 ),
                 const SizedBox(
                   width: 50,
-                ),const Divider(thickness: 2,color: Colors.black ),
+                ),
+                const Divider(thickness: 2, color: Colors.black),
                 Column(
                   children: const [
                     Text(
-                      'Cap',
+                      'Headphone',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(' \$ 114.95‬',style: TextStyle(fontWeight: FontWeight.bold),),
-                    Text(' X5')
+                    Text(
+                      ' \$ 44.00‬',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(' X4')
                   ],
                 ),
               ],
-            ),const Divider(thickness: 2,color: Colors.black,),     Row(
+            ),
+            const Divider(
+              thickness: 2,
+              color: Colors.black,
+            ),
+            Row(
               children: [
                 SizedBox(
                   width: 60,
@@ -100,22 +130,30 @@ class Order extends StatelessWidget {
                 ),
                 const SizedBox(
                   width: 50,
-                ),const Divider(thickness: 2,color: Colors.black ),
+                ),
+                const Divider(thickness: 2, color: Colors.black),
                 Column(
                   children: const [
                     Text(
-                      'Cap',
+                      'Vitamin C Serum',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(' \$ 114.95‬',style: TextStyle(fontWeight: FontWeight.bold),),
-                    Text(' X5')
+                    Text(
+                      ' \$ 84.95‬',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(' X3')
                   ],
                 ),
               ],
-            ),const Divider(thickness: 2,color: Colors.black,),
+            ),
+            const Divider(
+              thickness: 2,
+              color: Colors.black,
+            ),
             Row(
               children: [
                 SizedBox(
@@ -124,22 +162,31 @@ class Order extends StatelessWidget {
                 ),
                 const SizedBox(
                   width: 50,
-                ),const Divider(thickness: 2,color: Colors.black ),
+                ),
+                const Divider(thickness: 2, color: Colors.black),
                 Column(
                   children: const [
                     Text(
-                      'Cap',
+                      'Wireless Speakers',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(' \$ 114.95‬',style: TextStyle(fontWeight: FontWeight.bold),),
-                    Text(' X5')
+                    Text(
+                      ' \$ 35.25‬',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(' X1')
                   ],
                 ),
               ],
-            ),const Divider(thickness: 2,color: Colors.black,), Row(
+            ),
+            const Divider(
+              thickness: 2,
+              color: Colors.black,
+            ),
+            Row(
               children: [
                 SizedBox(
                   width: 60,
@@ -147,22 +194,30 @@ class Order extends StatelessWidget {
                 ),
                 const SizedBox(
                   width: 50,
-                ),const Divider(thickness: 2,color: Colors.black ),
+                ),
+                const Divider(thickness: 2, color: Colors.black),
                 Column(
                   children: const [
                     Text(
-                      'Cap',
+                      'Car Cleaning Gel',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Text(' \$ 114.95‬',style: TextStyle(fontWeight: FontWeight.bold),),
-                    Text(' X5')
+                    Text(
+                      ' \$ 14.50‬',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(' X2')
                   ],
                 ),
               ],
-            ),const Divider(thickness: 2,color: Colors.black,),
+            ),
+            const Divider(
+              thickness: 2,
+              color: Colors.black,
+            ),
           ],
         ),
       ),

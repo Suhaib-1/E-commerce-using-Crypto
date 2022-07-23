@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/account_screen.dart';
-import 'package:test_6_6_2020/customers_screen.dart';
-import 'package:test_6_6_2020/products_screen.dart';
-import 'package:test_6_6_2020/recharge_screen.dart';
-import 'package:test_6_6_2020/signup_screen.dart';
-import 'package:test_6_6_2020/packages_screeen.dart';
-import 'package:test_6_6_2020/wallet_screen.dart';
+import 'package:wealth_earn/account_screen.dart';
+import 'package:wealth_earn/customers_screen.dart';
+import 'package:wealth_earn/products_screen.dart';
+import 'package:wealth_earn/recharge_screen.dart';
+import 'package:wealth_earn/signup_screen.dart';
+import 'package:wealth_earn/packages_screeen.dart';
+import 'package:wealth_earn/wallet_screen.dart';
+import 'package:wealth_earn/welcome_screen.dart';
 import 'login_screen.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Packages(),
+      home: WelcomeScreen(),
       title: 'Hello',
       debugShowCheckedModeBanner: false,
     );

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/account_screen.dart';
-import 'package:test_6_6_2020/customers_screen.dart';
-import 'package:test_6_6_2020/order_screen.dart';
-import 'package:test_6_6_2020/products_screen.dart';
-import 'package:test_6_6_2020/recharge_screen.dart';
-import 'package:test_6_6_2020/packages_screeen.dart';
+import 'package:wealth_earn/account_screen.dart';
+import 'package:wealth_earn/customers_screen.dart';
+import 'package:wealth_earn/products_screen.dart';
+import 'package:wealth_earn/recharge_screen.dart';
+import 'package:wealth_earn/packages_screeen.dart';
 
 enum SpecialContainerType { customers, products, recharge, order }
 enum BottomNav { home, profile }
@@ -50,7 +49,7 @@ class Wallet extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Text(
+                  const Text(
                     'ID: 10510782',
                     style: TextStyle(color: Colors.white),
                   ),

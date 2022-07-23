@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:test_6_6_2020/wallet_screen.dart';
+import 'package:wealth_earn/wallet_screen.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({Key key}) : super(key: key);

@@ -1,4 +1,4 @@
-package com.example.test_6_6_2020
+package com.wealth_earn
 
 import io.flutter.embedding.android.FlutterActivity
 

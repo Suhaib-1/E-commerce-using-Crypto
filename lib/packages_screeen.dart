@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:test_6_6_2020/account_screen.dart';
-import 'package:test_6_6_2020/order_screen.dart';
-import 'package:test_6_6_2020/wallet_screen.dart';
+import 'package:wealth_earn/account_screen.dart';
+import 'package:wealth_earn/order_screen.dart';
+import 'package:wealth_earn/wallet_screen.dart';
 enum BottomNav { home, profile }
 
 class Packages extends StatefulWidget {

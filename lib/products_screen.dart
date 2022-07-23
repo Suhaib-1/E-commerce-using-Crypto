@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/constants.dart';
+import 'package:wealth_earn/constants.dart';
 
 
 class Products extends StatefulWidget {

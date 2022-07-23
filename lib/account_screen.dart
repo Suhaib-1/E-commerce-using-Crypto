@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:test_6_6_2020/login_screen.dart';
-import 'package:test_6_6_2020/privacy_and_security.dart';
-import 'package:test_6_6_2020/terms_of_us.dart';
-import 'package:test_6_6_2020/withdraw.dart';
+import 'package:wealth_earn/login_screen.dart';
+import 'package:wealth_earn/privacy_and_security.dart';
+import 'package:wealth_earn/terms_of_us.dart';
+import 'package:wealth_earn/withdraw.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key key}) : super(key: key);
