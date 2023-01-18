@@ -1,5 +1,5 @@
 # wealth_earn
-
+E-Commerce project with cyrpto payment idea 
 A new Flutter application.
 
 ## Getting Started
